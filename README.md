@@ -63,3 +63,7 @@ The extension needs permission to run on all websites so it can fix text whereve
 | `manifest.json` | Extension configuration |
 | `content.js` | Watches typing and capitalizes a standalone "i" |
 | `popup.html` / `popup.js` | Toolbar popup for excluding sites |
+
+## License
+
+[MIT](LICENSE)
