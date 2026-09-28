@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Capital I",
+  "version": "3.0",
+  "description": "Automatically capitalizes a standalone lowercase \"i\" as you type, on any website.",
+  "permissions": ["storage", "activeTab"],
+  "action": {
+    "default_title": "Capital I",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "all_frames": true,
+      "match_about_blank": true,
+      "run_at": "document_idle"
+    }
+  ]
+}

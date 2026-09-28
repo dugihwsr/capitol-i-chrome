@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { font: 14px system-ui, sans-serif; width: 260px; margin: 0; padding: 14px; color: #202124; }
+    h1 { font-size: 15px; margin: 0 0 10px; }
+    #site { font-weight: 600; word-break: break-all; }
+    #status { margin: 4px 0 10px; color: #5f6368; }
+    button { font: inherit; cursor: pointer; border-radius: 6px; }
+    #toggle { width: 100%; padding: 8px; border: none; color: #fff; background: #d93025; }
+    #toggle.enable { background: #1a73e8; }
+    #toggle:disabled { background: #9aa0a6; cursor: default; }
+    h2 { font-size: 12px; text-transform: uppercase; color: #5f6368; margin: 16px 0 6px; }
+    ul { list-style: none; margin: 0; padding: 0; }
+    li { display: flex; justify-content: space-between; align-items: center; padding: 3px 0; }
+    li button { border: 1px solid #dadce0; background: #fff; padding: 2px 8px; font-size: 12px; }
+    #empty { color: #9aa0a6; }
+  </style>
+</head>
+<body>
+  <h1>Capital I</h1>
+  <div id="site"></div>
+  <div id="status"></div>
+  <button id="toggle" disabled>…</button>
+
+  <h2>Excluded sites</h2>
+  <ul id="list"></ul>
+  <div id="empty">None</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
